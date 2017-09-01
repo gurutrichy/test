@@ -1,0 +1,35 @@
+<html>
+<head>
+<script  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script>
+function toggle() {
+ if( document.getElementById("hidethis").style.display=='none' ){
+   document.getElementById("hidethis").style.display = 'table-row';
+ }else{
+   document.getElementById("hidethis").style.display = 'none';
+ }
+}
+</script>
+</head>
+<body>
+
+<span onClick="toggle();">toggle</span><br /><br />
+
+<table border="1">
+<tr>
+<td>Always visible</td>
+</tr>
+<tr id="hidethis">
+<td>Hide this</td>
+</tr>
+<tr>
+<td>Always visible</td>
+</tr>
+</table>
+
+</body>
+</html>
